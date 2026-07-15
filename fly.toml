@@ -1,27 +1,28 @@
-# fly.toml app configuration file generated for gramps-web-h6anow on 2026-07-15T10:43:45Z
+# Файл конфигурации приложения fly.toml создан для gramps-web-h6anow 15 июля 2026 г. T10:43:45Z
 #
-# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+# См. https://fly.io/docs/reference/configuration/ для получения информации о том, как использовать этот файл.
 #
 
-app = 'gramps-web-h6anow'
-primary_region = 'ams'
+приложение = 'gramps-web-h6anow'
+первичный_регион = 'эмс'
 
-[build]
+[строить]
 
-[env]
+[окружающая среда]
   GRAMPSWEB_HOST = "0.0.0.0"
   GRAMPSWEB_PORT = "5000"
+  GUNICORN_NUM_WORKERS = "1"
   
 [http_service]
-  internal_port = 5000
-  force_https = true
-  auto_stop_machines = 'stop'
-  auto_start_machines = true
+  внутренний_порт = 5000
+  сила_https = истинный
+  авто_стоп_машины = «стоп»
+  машины_авто_запуска = истинный
   min_machines_running = 0
-  processes = ['app']
+  процессы = ['приложение']
 
-[[vm]]
-  memory = '1gb'
-  cpu_kind = 'shared'
-  cpus = 1
-  memory_mb = 256
+[[вм]]
+  память = '1гб'
+  cpu_kind = 'поделился'
+  кпус = 1
+  память_мб = 256
