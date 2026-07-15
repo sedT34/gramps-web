@@ -1,10 +1,10 @@
-# fly.toml app configuration file generated for gramps-web-fmov4a on 2026-07-15T10:15:11Z
+# fly.toml app configuration file generated for gramps-web-h6anow on 2026-07-15T10:43:45Z
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'gramps-web-fmov4a'
-primary_region = 'iad'
+app = 'gramps-web-h6anow'
+primary_region = 'ams'
 
 [build]
 
