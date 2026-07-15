@@ -12,6 +12,7 @@ primary_region = 'ams'
   GRAMPSWEB_HOST = "0.0.0.0"
   GRAMPSWEB_PORT = "5000"
   GUNICORN_NUM_WORKERS = "1" # Это ограничит количество процессов до одного
+  GRAMPSWEB_TREE = "MyFamilyTree"
 
 [http_service]
   internal_port = 5000
